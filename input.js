@@ -28,6 +28,9 @@ if (key === '\u0073') {
 if (key === '\u0064') {
   connection.write(`Move: right`)
 };
+if (key === '\u0070') {
+  connection.write(`Say: Hi!`)
+}
 }
 
 module.exports = {
