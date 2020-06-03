@@ -10,6 +10,12 @@ const connect = function() {
 //do something when app is closing
 process.on('exit', () => console.log(`you ded cuz you idled`));
 
+// confirm we are connected to server
+conn.on('connect', () => {
+  console.log(`connection established`);
+  conn.write(`Name: JBD`);
+
+});
 
 
   return conn;
