@@ -14,6 +14,10 @@ process.on('exit', () => console.log(`you ded cuz you idled`));
 conn.on('connect', () => {
   console.log(`connection established`);
   conn.write(`Name: JBD`);
+//   conn.write(`Move: up`)
+//   setInterval(() => {
+//     conn.write(`Move: up`)
+//   }, 500);
 
 });
 
