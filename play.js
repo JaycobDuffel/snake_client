@@ -7,10 +7,10 @@ const { setupInput } = require('./input');
 
 
 console.log('Connecting ...');
-connect();
+let conObj = connect();
 
 
 
-setupInput();
+setupInput(conObj);
   
   
